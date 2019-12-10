@@ -108,3 +108,10 @@
     width: 30px;
     margin: 35px;
 }
+
+
+/* <!-- Esercizio 6 --> */
+.ex-6-img:hover {
+    width: 500px;
+    filter: grayscale(1)
+}

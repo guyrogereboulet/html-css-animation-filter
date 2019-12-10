@@ -46,6 +46,7 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s;
 }
 .ex-10-icon {
     font-size: 60px;
@@ -135,4 +136,12 @@
 .ex-8-img:hover {
     filter: invert(0.1) sepia(0.8);
     border-radius: 15px;
+}
+
+/* <!-- Esercizio 9 --> */
+.ex-9-img:hover {
+    filter: invert(0.1) sepia(0.8);
+    border-radius: 15px;
+    width: 582px;
+    margin: 0;
 }

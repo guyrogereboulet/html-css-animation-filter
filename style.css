@@ -50,7 +50,7 @@
 }
 .ex-10-icon {
     font-size: 60px;
-    animation-name: gira;
+    animation-name: esercizio_10;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -58,6 +58,15 @@
 }
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover {
+    font-size: 60px;
+    animation-name: esercizio_11;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.42, 0, 1.0, 1.0));
+    transform: rotate(0deg);
 }
 .ex-12-button, .ex-13-button {
     position: relative;
@@ -153,7 +162,15 @@
 
 
 /* <!-- Esercizio 10 --> */
-@keyframes gira {
+@keyframes esercizio_10 {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(-360deg);}
+}
+
+/* <!-- Esercizio 11 --> */
+
+@keyframes esercizio_11 {
+  0% {transform: rotate(0deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(0deg);}
 }

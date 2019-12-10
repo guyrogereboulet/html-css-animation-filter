@@ -68,7 +68,8 @@
     animation-timing-function: cubic-bezier(0.42, 0, 1.0, 1.0));
     transform: rotate(0deg);
 }
-.ex-12-button, .ex-13-button {
+
+.ex-12-button {
     position: relative;
     display: block;
     width: 200px;
@@ -81,7 +82,8 @@
     text-align: center;
     text-decoration: none;
 }
-.ex-12-top-white, .ex-13-top-white {
+
+.ex-12-top-white {
     position: absolute;
     top: -10px;
     left: 10%;
@@ -89,7 +91,68 @@
     width: 60px;
     height: 20px;
 }
-.ex-12-bottom-white, .ex-13-bottom-white {
+
+.ex-12-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+    animation-name: esercizio_12_top;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+.ex-12-button:hover .ex-12-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+    animation-name: esercizio_12_bottom;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+
+.ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
     right: 20%;
@@ -173,4 +236,37 @@
   0% {transform: rotate(0deg);}
   75% {transform: rotate(270deg);}
   100% {transform: rotate(0deg);}
+}
+
+
+/* <!-- Esercizio 12 --> */
+
+@keyframes esercizio_12_top {
+  0% {
+   top: -10px;
+   left: 10%;
+ }
+  50% {
+    top: -10px;
+    left: 70%;
+  }
+  100% {
+    top: -10px;
+    left: 10%;
+  }
+}
+
+@keyframes esercizio_12_bottom {
+  0% {
+   bottom: -10px;
+   right: 20%;
+ }
+  50% {
+    bottom: -10px;
+    right: 70%;
+  }
+  100% {
+    bottom: -10px;
+    right: 20%;
+  }
 }

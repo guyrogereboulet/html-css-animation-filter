@@ -29,7 +29,16 @@
     background: red;
     transition: all 2s;
 }
-.ex-6-img, .ex-7-img, .ex-8-img {
+.ex-6-img {
+    width: 500px;
+}
+
+.ex-7-img {
+    width: 500px;
+    transition: all 2s;
+}
+
+.ex-8-img {
     width: 500px;
 }
 
@@ -112,6 +121,11 @@
 
 /* <!-- Esercizio 6 --> */
 .ex-6-img:hover {
-    width: 500px;
     filter: grayscale(1)
+}
+
+/* <!-- Esercizio 7 --> */
+
+.ex-7-img:hover {
+    filter: grayscale(1) sepia(0.5);
 }
